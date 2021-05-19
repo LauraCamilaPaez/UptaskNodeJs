@@ -1,16 +1,20 @@
 //Importar el modelo
+//const { noExtendLeft } = require('sequelize/types/lib/operators');
 const Proyectos = require('../models/Proyectos');
-//Importar SLUG
-const slug = require('slug');
-exports.proyectosHome = (req, res) => {
+
+
+exports.proyectosHome = async (req, res) => {
+    const proyectos = await Proyectos.findAll();
+
     res.render('index', {
-        nombrePagina : 'Proyectos'
+        nombrePagina : 'Proyectos',
+        proyectos
     });
 }
 
 exports.formularioProyecto = (req, res) => {
     res.render('nuevoProyecto', {
-        nombrePagina: 'Nuevo Proyecto'
+        nombrePagina: 'Nuevo Proyecto',
     });
 }
 
@@ -40,4 +44,18 @@ exports.nuevoProyecto = async (req, res) =>{
             res.redirect('/');
     }
 
+}
+
+exports.proyectoPorUrl = async (req, res) => {
+    const proyecto = await Proyectos.findOne({
+        where: {
+            url: req.params.url
+        }
+    });
+
+    if(!proyecto) return next();
+
+    console.log(proyecto);
+
+    res.send('OK')
 }

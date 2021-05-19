@@ -2,6 +2,9 @@
 const Sequelize = require('sequelize');
 // Import CONFIGURATION
 const db = require('../config/db');
+//Importar SLUG
+const slug = require('slug');
+const shortid = require('short-id');
 
 const Proyectos = db.define('proyectos', {
     id : {
