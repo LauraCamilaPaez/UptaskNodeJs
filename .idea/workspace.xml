@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5690b88d-f1c7-4827-8b17-1e1c113e870c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/controllers/proyectosController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/proyectosController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
+    <list default="true" id="5690b88d-f1c7-4827-8b17-1e1c113e870c" name="Default Changelist" comment="UPDATE DB CONNECTION">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +56,9 @@
       <workItem from="1620997332513" duration="171000" />
       <workItem from="1621306448946" duration="111000" />
       <workItem from="1621306563060" duration="370000" />
+      <workItem from="1621308834919" duration="154000" />
+      <workItem from="1621385915161" duration="57000" />
+      <workItem from="1621385974001" duration="177000" />
     </task>
     <task id="LOCAL-00001" summary="Commit init">
       <created>1620959825950</created>
@@ -84,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621306534117</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="UPDATE DB CONNECTION">
+      <created>1621386096692</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1621386096692</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +110,7 @@
     <MESSAGE value="Commit init" />
     <MESSAGE value="Add template engine and public folder" />
     <MESSAGE value="Add DB connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add DB connection" />
+    <MESSAGE value="UPDATE DB CONNECTION" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE DB CONNECTION" />
   </component>
 </project>
