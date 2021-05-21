@@ -3,6 +3,7 @@ const express = require('express');
 const routes = require('./routes');
 const path = require('path');
 const bodyParser = require('body-parser');
+const expressValidator = require('express-validator');
 
 // helpers con algunas funciones
 const helpers = require('./helpers');
@@ -19,6 +20,10 @@ db.sync()
 
 // Crear una app de express
 const app = express();
+
+//Agregar express a toda la aplicaciòn
+app.use(expressValidator());
+
 
 //Donde cargar los archivos estaticos
 app.use(express.static('public'));

@@ -7,7 +7,7 @@ exports.proyectosHome = async (req, res) => {
     const proyectos = await Proyectos.findAll();
 
     res.render('index', {
-        nombrePagina : 'Proyectos',
+        nombrePagina : 'Proyectos ' + res.locals.year,
         proyectos
     });
 }
@@ -41,7 +41,7 @@ exports.nuevoProyecto = async (req, res) =>{
         //Si no hay errores, entonces insertar en la DB
         const url = slug(nombre).toLowerCase();
         const proyecto = await Proyectos.create({ nombre, url });
-            res.redirect('/');
+        res.redirect('/');
     }
 
 }

@@ -58,6 +58,7 @@
       <workItem from="1621385915161" duration="57000" />
       <workItem from="1621385974001" duration="177000" />
       <workItem from="1621391679919" duration="319000" />
+      <workItem from="1621429026479" duration="60000" />
     </task>
     <task id="LOCAL-00001" summary="Commit init">
       <created>1620959825950</created>
@@ -94,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621391833691</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add Middleware">
+      <created>1621429064034</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1621429064034</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +126,7 @@
     <MESSAGE value="Add DB connection" />
     <MESSAGE value="UPDATE DB CONNECTION" />
     <MESSAGE value="Add URL unique for projects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add URL unique for projects" />
+    <MESSAGE value="Add Middleware" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Middleware" />
   </component>
 </project>
