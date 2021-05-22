@@ -1,11 +1,8 @@
 //Importar el modelo
-//const { noExtendLeft } = require('sequelize/types/lib/operators');
 const Proyectos = require('../models/Proyectos');
-
 
 exports.proyectosHome = async (req, res) => {
     const proyectos = await Proyectos.findAll();
-
     res.render('index', {
         nombrePagina : 'Proyectos ' + res.locals.year,
         proyectos
@@ -24,9 +21,7 @@ exports.nuevoProyecto = async (req, res) =>{
     //console.log(req.body);
 
     //validar que tengamos algo en el input
-    const { nombre } = req.body;
-
-    let errores = [];
+    const { nombre } = req.body.nombre;
 
     if(!nombre) {
         errores.push({'texto': 'Agrega un Nombre al Proyecto'})
@@ -39,11 +34,9 @@ exports.nuevoProyecto = async (req, res) =>{
         });
     } else {
         //Si no hay errores, entonces insertar en la DB
-        const url = slug(nombre).toLowerCase();
-        const proyecto = await Proyectos.create({ nombre, url });
+        const proyecto = await Proyectos.create({ nombre});
         res.redirect('/');
     }
-
 }
 
 exports.proyectoPorUrl = async (req, res) => {
