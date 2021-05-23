@@ -1,40 +1,47 @@
 //Importar el modelo
 const Proyectos = require('../models/Proyectos');
 
-exports.proyectosHome = async (req, res) => {
+exports.proyectosHome = async(req, res) => {
     const proyectos = await Proyectos.findAll();
     res.render('index', {
-        nombrePagina : 'Proyectos ' + res.locals.year,
+        nombrePagina : 'Proyectos',
         proyectos
     });
 }
 
-exports.formularioProyecto = (req, res) => {
+exports.formularioProyecto = async(req, res) => {
+    const proyectos = await Proyectos.findAll();
     res.render('nuevoProyecto', {
         nombrePagina: 'Nuevo Proyecto',
+        proyectos,
     });
 }
 
-exports.nuevoProyecto = async (req, res) =>{
-
+exports.nuevoProyecto = async (req, res) => {
     //enviar a la consola lo que el usuario escriba
     //console.log(req.body);
 
     //validar que tengamos algo en el input
-    const { nombre } = req.body.nombre;
+    const nombre = req.body.nombre;
+    
+    let errores = [];
 
     if(!nombre) {
-        errores.push({'texto': 'Agrega un Nombre al Proyecto'})
+        errores.push({'texto': 'Agrega un Nombre al Proyecto'
+    });
     } 
 
     if(errores.length > 0) {
+        const proyectos = Proyectos.findAll();
         res.render('nuevoProyecto', {
             nombrePagina : 'Nuevo Proyecto',
-            errores
+            errores,
+            proyectos
         });
     } else {
-        //Si no hay errores, entonces insertar en la DB
-        const proyecto = await Proyectos.create({ nombre});
+        //Si no hay  errores, entonces insertar en la DB
+        /*const url = slug(nombre).toLocaleLowerCase(); */
+        const proyecto = await Proyectos.create({ nombre });
         res.redirect('/');
     }
 }

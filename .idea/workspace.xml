@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5690b88d-f1c7-4827-8b17-1e1c113e870c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/proyectosController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/proyectosController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Proyectos.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Proyectos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.bin/mime" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.bin/mime.cmd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.bin/mime.ps1" beforeDir="false" />
@@ -462,10 +457,6 @@
       <change beforePath="$PROJECT_DIR$/node_modules/wkx/dist/wkx.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/wkx/dist/wkx.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/wkx/dist/wkx.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/wkx/dist/wkx.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/wkx/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/wkx/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -526,6 +517,7 @@
       <workItem from="1621429026479" duration="60000" />
       <workItem from="1621571622663" duration="93000" />
       <workItem from="1621653542045" duration="163000" />
+      <workItem from="1621653707515" duration="155000" />
     </task>
     <task id="LOCAL-00001" summary="Commit init">
       <created>1620959825950</created>
@@ -576,7 +568,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621571642880</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update Js dependences">
+      <created>1621653800243</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1621653800243</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,6 +601,7 @@
     <MESSAGE value="Add URL unique for projects" />
     <MESSAGE value="Add Middleware" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Update Js dependences" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Js dependences" />
   </component>
 </project>

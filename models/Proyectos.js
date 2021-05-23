@@ -12,15 +12,15 @@ const Proyectos = db.define('proyectos', {
         autoIncrement: true,
         primaryKey: true,      
     },
-    nombre : Sequelize.STRING,
-    url : Sequelize.STRING
+        nombre : Sequelize.STRING,
+        url : Sequelize.STRING
 }, {
     //Corren una función en determinado tiempo
     hooks: {
             beforeCreate(proyecto){
                 const url = slug(proyecto.nombre).toLowerCase();
                 
-                proyecto.url = `${url}-${shortid.generate()}`
+                proyecto.url = `${url}-${shortid.generate()}`;
         }
     }
 });
